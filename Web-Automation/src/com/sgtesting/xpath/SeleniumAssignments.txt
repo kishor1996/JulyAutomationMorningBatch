@@ -1,0 +1,17 @@
+Basic flow/Basic Scenarios:
+----------------------------------
+1) launchBrowser-->navigate-->login-->createUser-->deleteUser-->logout -->closeApplication
+2)launchBrowser-->navigate-->login-->createUser-->modifyUser-->deleteUser-->logout -->closeApplication
+3) launchBrowser-->navigate-->login-->createCustomer-->deleteCustomer-->logout -->closeApplication
+4) launchBrowser-->navigate-->login-->createCustomer-->modifyCustomer-->deleteCustomer-->logout -->closeApplication
+5) launchBrowser-->navigate-->login-->createCustomer-->CreateProject-->DeleteProject-->deleteCustomer-->logout -->closeApplication
+6) launchBrowser-->navigate-->login-->createCustomer-->CreateProject-->modifyProject -->DeleteProject-->deleteCustomer-->logout -->closeApplication
+7) launchBrowser-->navigate-->login-->createCustomer-->CreateProject-->Create Tasks -->Delete Tasks -->DeleteProject-->deleteCustomer-->logout -->closeApplication
+8) launchBrowser-->navigate-->login--> import Tasks -> Delete Tasks --> Logout --> Close Appplication
+Advanced Scenarios:
+------------------------------
+1) launchBrowser-->navigate-->login as admin-->createuser [User1,User2,User3] -->logout--->login as User1--->logout-->Login as User2 --> logout -->login as User3 --> logout-->login as admin [modify the password for User1,User2,User3] --> logout -->login as User1--->logout-->Login as User2 --> logout -->login as User3 --> logout-->login as Admin --> Delete [User1,User2,User3]-->logout -->closeApplication
+
+2)launchBrowser-->navigate-->login as admin-->createuser [User1] -->logout ->login as User1-->createUser [User2] -->logout -->login as User2 --> createUser [User3]--> logout-->login as User3 --> logout -->login as User2 -->modify password for User3-->logout --> login as User3 --> logout-->
+login as User1 -->modify password for User2 --> logout -->login as User2 --> logout-->login as admin--> modify password for User1 --> logout -->login as User1 --> logout --> login as User2 --> Delete User3--> logout --> login as User1 --> delete USer2 --> logout --> login as Admin --> delete User1 --> logout --> closeApplication
+
